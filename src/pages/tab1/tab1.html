@@ -15,4 +15,16 @@
 
 <ion-content padding>
 
+  <ion-list>
+    <ion-item-sliding *ngFor="let personaje of personajes; let i = index">
+      <ion-item >
+        <ion-avatar item-left>
+          <img [src]="personaje.img">
+        </ion-avatar>
+        <h2>{{ personaje.nombre }}</h2>
+        <p>{{ personaje.titulo }}</p>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+
 </ion-content>
