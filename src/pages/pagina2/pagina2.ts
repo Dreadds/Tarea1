@@ -14,12 +14,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pagina2.html',
 })
 export class Pagina2Page {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  personaje:any ={};
+  constructor(public navCtrl: NavController, private navParams: NavParams) {
+    console.log(navParams);
+    this.personaje = this.navParams.get("personaje");
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Pagina2Page');
+  irAtras() {
+    this.navCtrl.pop();
   }
 
 }

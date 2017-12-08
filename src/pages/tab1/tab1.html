@@ -16,8 +16,9 @@
 <ion-content padding>
 
   <ion-list>
-    <ion-item-sliding *ngFor="let personaje of personajes; let i = index">
-      <ion-item >
+    <ion-item-sliding >
+      <ion-item *ngFor="let personaje of personajes"
+                (click)="irPagina2( personaje )" >
         <ion-avatar item-left>
           <img [src]="personaje.img">
         </ion-avatar>
