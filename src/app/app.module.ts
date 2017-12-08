@@ -27,7 +27,9 @@ import {
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp,{
-      backButtonText: 'Atras'
+      backButtonText: 'Atras',
+      iconMode: 'ios',
+      pageTransition: 'ios-transition'
     })
   ],
   bootstrap: [IonicApp],

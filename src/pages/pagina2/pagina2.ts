@@ -16,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class Pagina2Page {
   personaje:any ={};
   constructor(public navCtrl: NavController, private navParams: NavParams) {
-    console.log(navParams);
+    //console.log(navParams);
     this.personaje = this.navParams.get("personaje");
   }
 
